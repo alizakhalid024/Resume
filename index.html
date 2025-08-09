@@ -1,1 +1,367 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css"> @import url(https://themes.googleusercontent.com/fonts/css?kit=kbffV7V9BIH3Ot2AQ2LQRA);</style></head><body class="doc-content" style="background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt"><p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.0;text-align:left"><span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Courier&quot;;font-style:normal">&lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot; class=&quot;scroll-smooth&quot;&gt;<br>&lt;head&gt;<br> &nbsp; &nbsp;&lt;meta charset=&quot;UTF-8&quot;&gt;<br> &nbsp; &nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br> &nbsp; &nbsp;&lt;title&gt;Aliza Khalid Resume&lt;/title&gt;<br> &nbsp; &nbsp;&lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;<br> &nbsp; &nbsp;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;<br> &nbsp; &nbsp;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;<br> &nbsp; &nbsp;&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;<br> &nbsp; &nbsp;&lt;!-- Custom Tailwind Configuration for the theme --&gt;<br> &nbsp; &nbsp;&lt;script&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;tailwind.config = {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;theme: {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;extend: {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;colors: {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;primary-navy&#39;: &#39;#1D2A4B&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;secondary-white&#39;: &#39;#F4F7FB&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;},<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fontFamily: {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sans: [&#39;Montserrat&#39;, &#39;sans-serif&#39;],<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;},<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp;&lt;/script&gt;<br> &nbsp; &nbsp;&lt;style&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;body {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;font-family: &#39;Montserrat&#39;, sans-serif;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;padding-top: 4.5rem;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;background: linear-gradient(to bottom right, #D6E0F0, #A0B2D4);<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;/* New class to prevent background scrolling when modal is open */<br> &nbsp; &nbsp; &nbsp; &nbsp;body.modal-open {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;overflow: hidden;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;.modal-backdrop {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transition: opacity 0.3s ease-in-out;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;.modal-content {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transition: transform 0.3s ease-in-out;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;.skill-bar {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;background-color: #e5e7eb;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;height: 10px;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;border-radius: 9999px;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;/* Initial state of the skill bar fill */<br> &nbsp; &nbsp; &nbsp; &nbsp;.skill-level-fill {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;height: 100%;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;background-color: #1f2937;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;border-radius: 9999px;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;width: 0; /* Start with zero width */<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transition: width 1s ease-out; /* Add a smooth transition */<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;/* Keyframe animation for the navigation button click effect */<br> &nbsp; &nbsp; &nbsp; &nbsp;@keyframes pulse {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0% { transform: scale(1); }<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;50% { transform: scale(0.95); }<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;100% { transform: scale(1); }<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;.nav-button-clicked {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;animation: pulse 0.3s ease-in-out;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;.nav-button {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transition: all 0.2s ease-in-out;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transform-origin: center;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;/* Style for the SVG avatar to ensure it&#39;s centered and colored correctly */<br> &nbsp; &nbsp; &nbsp; &nbsp;.avatar-svg {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;width: 100%;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;height: 100%;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;display: block;<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;/* Mobile menu styling */<br> &nbsp; &nbsp; &nbsp; &nbsp;#mobile-menu {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transition: transform 0.3s ease-in-out;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transform: translateX(-100%);<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp;#mobile-menu.open {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;transform: translateX(0);<br> &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp;&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body class=&quot;text-gray-800&quot;&gt;<br><br> &nbsp; &nbsp;&lt;!-- Fixed Navigation Header --&gt;<br> &nbsp; &nbsp;&lt;nav class=&quot;fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300 ease-in-out&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;max-w-5xl mx-auto flex justify-between items-center px-4 py-3 md:py-4&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Logo with increased font size and letter-spacing --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;a href=&quot;#&quot; class=&quot;text-2xl md:text-3xl font-extrabold text-primary-navy tracking-wider&quot;&gt;A.K.&lt;/a&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Desktop Navigation Links (hidden on mobile) --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;ul class=&quot;hidden md:flex space-x-2 text-sm font-medium&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#about&quot; class=&quot;nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#work-experience&quot; class=&quot;nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90&quot;&gt;Experience&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#education&quot; class=&quot;nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#certifications&quot; class=&quot;nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90&quot;&gt;Certifications&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#skills&quot; class=&quot;nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90&quot;&gt;Skills&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/ul&gt;<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Mobile Menu Button (hamburger) visible on small screens --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;button id=&quot;mobile-menu-button&quot; class=&quot;md:hidden p-2 text-primary-navy rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-navy transition-colors duration-200&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;svg class=&quot;h-6 w-6&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke=&quot;currentColor&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M4 6h16M4 12h16m-7 6h7&quot; /&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/svg&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/button&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp;&lt;/nav&gt;<br> &nbsp; &nbsp;<br> &nbsp; &nbsp;&lt;!-- Mobile Menu Panel (Hidden by default) --&gt;<br> &nbsp; &nbsp;&lt;div id=&quot;mobile-menu&quot; class=&quot;fixed inset-0 z-40 bg-white md:hidden&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;flex justify-between items-center px-4 py-3 border-b&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;a href=&quot;#&quot; class=&quot;text-2xl font-extrabold text-primary-navy tracking-wider&quot;&gt;A.K.&lt;/a&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;button id=&quot;mobile-menu-close&quot; class=&quot;p-2 text-gray-500 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;svg class=&quot;h-6 w-6&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke=&quot;currentColor&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M6 18L18 6M6 6l12 12&quot; /&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/svg&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/button&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;ul class=&quot;flex flex-col items-center gap-6 p-8 text-xl font-medium&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#about&quot; class=&quot;nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#work-experience&quot; class=&quot;nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors&quot;&gt;Experience&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#education&quot; class=&quot;nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#certifications&quot; class=&quot;nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors&quot;&gt;Certifications&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;&lt;a href=&quot;#skills&quot; class=&quot;nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors&quot;&gt;Skills&lt;/a&gt;&lt;/li&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/ul&gt;<br> &nbsp; &nbsp;&lt;/div&gt;<br><br> &nbsp; &nbsp;&lt;!-- Hero Section --&gt;<br> &nbsp; &nbsp;&lt;header class=&quot;relative bg-white pt-20 pb-40 md:pt-32 md:pb-52 flex items-center justify-center min-h-[60vh]&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;max-w-4xl mx-auto text-center px-4&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- New SVG avatar representing a magnifying glass over a stylized leaf --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-6 bg-primary-navy/10 flex items-center justify-center p-4&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;svg class=&quot;avatar-svg&quot; viewBox=&quot;0 0 100 100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Magnifying glass handle --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;path d=&quot;M 65 65 L 85 85&quot; stroke=&quot;#1f2937&quot; stroke-width=&quot;5&quot; stroke-linecap=&quot;round&quot; /&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Magnifying glass lens --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;circle cx=&quot;45&quot; cy=&quot;45&quot; r=&quot;30&quot; fill=&quot;none&quot; stroke=&quot;#1f2937&quot; stroke-width=&quot;5&quot; /&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Leaf shape inside --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;path d=&quot;M 45 30 C 55 25 65 35 60 45 C 55 55 40 50 45 30 Z&quot; fill=&quot;#1f2937&quot; /&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/svg&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h1 class=&quot;text-4xl md:text-5xl font-bold mb-2&quot;&gt;Aliza Khalid&lt;/h1&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;text-base md:text-lg text-gray-600 mb-6&quot;&gt;Food Scientist | Quality Control Specialist&lt;/p&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;flex flex-col md:flex-row justify-center items-center gap-4 text-gray-600&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;a href=&quot;mailto:alizakhalid024@gmail.com&quot; class=&quot;hover:text-primary-navy transition-colors&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class=&quot;font-semibold mr-1&quot;&gt;&#128231;&lt;/span&gt; alizakhalid024@gmail.com<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/a&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp;&lt;/header&gt;<br><br> &nbsp; &nbsp;&lt;!-- Reduced vertical spacing between sections --&gt;<br> &nbsp; &nbsp;&lt;main class=&quot;relative -mt-24 md:-mt-32 max-w-5xl mx-auto px-4 space-y-12 md:space-y-16 pb-20&quot;&gt;<br><br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;section id=&quot;about&quot; class=&quot;bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h2 class=&quot;text-3xl font-bold mb-4&quot;&gt;About Me&lt;/h2&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;text-gray-700 leading-relaxed&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A recent graduate in Food Science and Technology, I possess a strong academic foundation and hands-on experience from a valuable internship in quality control. My goal is to apply my knowledge in Good Laboratory Practices and Quality Assurance to an entry-level position where I can contribute to a team&#39;s success and further develop my professional skills. I am a dedicated and fast learner, eager to take on new challenges and grow within a professional environment.<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/p&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/section&gt;<br><br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;section id=&quot;work-experience&quot; class=&quot;bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h2 class=&quot;text-3xl font-bold mb-8&quot;&gt;Work Experience&lt;/h2&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div id=&quot;work-experience-list&quot; class=&quot;space-y-8 md:space-y-12&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Content injected by JavaScript --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/section&gt;<br><br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;section id=&quot;education&quot; class=&quot;bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h2 class=&quot;text-3xl font-bold mb-8&quot;&gt;Education&lt;/h2&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div id=&quot;education-list&quot; class=&quot;space-y-8 md:space-y-12&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Content injected by JavaScript --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/section&gt;<br><br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;section id=&quot;certifications&quot; class=&quot;bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h2 class=&quot;text-3xl font-bold mb-8&quot;&gt;Certifications&lt;/h2&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div id=&quot;certifications-list&quot; class=&quot;space-y-6&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Content injected by JavaScript --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/section&gt;<br><br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;section id=&quot;skills&quot; class=&quot;bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h2 class=&quot;text-3xl font-bold mb-8&quot;&gt;Skills&lt;/h2&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h3 class=&quot;text-xl font-semibold mb-4&quot;&gt;Technical Skills&lt;/h3&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div id=&quot;technical-skills-list&quot; class=&quot;space-y-4&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Technical skills injected by JavaScript --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h3 class=&quot;text-xl font-semibold mb-4&quot;&gt;Soft Skills&lt;/h3&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div id=&quot;soft-skills-list&quot; class=&quot;space-y-4&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- Soft skills injected by JavaScript --&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;&lt;/section&gt;<br><br> &nbsp; &nbsp;&lt;/main&gt;<br> &nbsp; &nbsp;<br> &nbsp; &nbsp;&lt;!-- No project modal is needed for this resume --&gt;<br><br> &nbsp; &nbsp;&lt;script&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp;document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Data for the resume sections<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const skillsData = {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;technical: [<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Quality Control&#39;, level: 90 },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Good Laboratory Practice&#39;, level: 85 },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Research and Development&#39;, level: 80 },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Quality Assurance&#39;, level: 90 },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Food Science &amp; Technology&#39;, level: 95 }<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;],<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;soft: [<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Problem Solving&#39;, level: 90 },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Team Collaboration&#39;, level: 85 },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Communication&#39;, level: 80 },<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ skill: &#39;Fast Learner&#39;, level: 95 }<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;};<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const workData = [<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;title: &#39;Pakistan Standard And Quality Control Authority&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;subtitle: &#39;Intern&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;date: &#39;August 2023 &ndash; October 2023&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;details: [<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;Assisted in the implementation of quality control procedures for various products, ensuring adherence to national standards.&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;Applied principles of Good Laboratory Practice (GLP) to ensure the accuracy and reliability of all test results.&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;Participated in research and development activities to explore new methods for product quality enhancement.&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#39;Helped in the preparation of reports and documentation for quality assurance audits.&#39;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;];<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const educationData = [<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;title: &#39;Hamdard University&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;subtitle: &#39;BS In Food Science And Technology&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;date: &#39;Nov 2020 &ndash; June 2024&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;details: [&#39;Completed a comprehensive four-year program focusing on the scientific principles of food processing, preservation, quality assurance, and nutrition. Gained in-depth knowledge of food microbiology, chemistry, and safety regulations.&#39;]<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;},<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;title: &#39;Government Degree College Sector 11-B&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;subtitle: &#39;Intermediate in Pre-Engineering&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;date: &#39;2020&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;details: [&#39;Completed a curriculum focused on mathematics, physics, and chemistry, providing a strong analytical foundation for technical and scientific fields.&#39;]<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;},<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;title: &#39;Falcon House Grammar School&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;date: &#39;2017&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;subtitle: &#39;Matriculation&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;details: [&#39;Completed foundational studies, developing strong academic skills in core subjects including science and mathematics.&#39;]<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;];<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const certificationsData = [<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;name: &#39;Certificate of Internship from PSQCA&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;issuer: &#39;Pakistan Standard And Quality Control Authority&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;description: &quot;This certificate formally acknowledges the completion of my internship, confirming my hands-on experience in quality control and assurance at a leading national authority.&quot;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;skills: [&#39;Quality Control&#39;, &#39;Quality Assurance&#39;, &#39;Laboratory Practice&#39;],<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;imageUrl: &#39;https://placehold.co/150x110/d1d5db/4b5563?text=PSQCA&#39;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;},<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;name: &#39;Online Nutrition Internship Program&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;issuer: &#39;Online Provider&#39;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;description: &quot;Completed an online program to deepen my understanding of nutritional science, dietary planning, and food&#39;s impact on health. This expanded my knowledge beyond manufacturing and into the consumer-facing aspects of food science.&quot;,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;skills: [&#39;Nutrition&#39;, &#39;Dietary Planning&#39;, &#39;Food Science&#39;],<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;imageUrl: &#39;https://placehold.co/150x110/d1d5db/4b5563?text=Nutrition&#39;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;];<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Helper function to render a list of items<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const renderSection = (data, containerId, templateFn) =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const container = document.getElementById(containerId);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (container) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;container.innerHTML = data.map(templateFn).join(&#39;&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;};<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Templates for each section<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const workTemplate = (job) =&gt; `<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;relative pl-6 md:pl-8 border-l-2 border-gray-200&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class=&quot;absolute -left-2 top-0 block h-4 w-4 rounded-full bg-primary-navy ring-8 ring-white&quot;&gt;&lt;/span&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;flex justify-between items-start flex-wrap&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h3 class=&quot;text-xl md:text-2xl font-bold&quot;&gt;${job.title}&lt;/h3&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class=&quot;text-gray-500 text-sm md:text-base font-medium&quot;&gt;${job.date}&lt;/span&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;text-primary-navy font-semibold mb-2&quot;&gt;${job.subtitle}&lt;/p&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;ul class=&quot;list-disc list-inside space-y-1 text-gray-700&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;${job.details.map(detail =&gt; `&lt;li&gt;${detail}&lt;/li&gt;`).join(&#39;&#39;)}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/ul&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`;<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const educationTemplate = (edu) =&gt; `<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;relative pl-6 md:pl-8 border-l-2 border-gray-200&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class=&quot;absolute -left-2 top-0 block h-4 w-4 rounded-full bg-primary-navy ring-8 ring-white&quot;&gt;&lt;/span&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;flex justify-between items-start flex-wrap&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h3 class=&quot;text-xl md:text-2xl font-bold&quot;&gt;${edu.title}&lt;/h3&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class=&quot;text-gray-500 text-sm md:text-base font-medium&quot;&gt;${edu.date}&lt;/span&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;text-primary-navy font-semibold mb-2&quot;&gt;${edu.subtitle}&lt;/p&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;text-gray-700&quot;&gt;${edu.details[0]}&lt;/p&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`;<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const certificationsTemplate = (cert) =&gt; `<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 bg-secondary-white p-6 rounded-xl border border-gray-200&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;img src=&quot;${cert.imageUrl}&quot; alt=&quot;${cert.name} certificate&quot; class=&quot;w-24 h-24 flex-shrink-0 object-cover rounded-md&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h3 class=&quot;text-lg font-bold&quot;&gt;${cert.name}&lt;/h3&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;text-gray-600 font-medium&quot;&gt;${cert.issuer}&lt;/p&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class=&quot;text-gray-700 text-sm mt-2&quot;&gt;${cert.description}&lt;/p&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;flex flex-wrap gap-2 mt-4&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;${cert.skills.map(skill =&gt; `&lt;span class=&quot;bg-primary-navy/10 text-primary-navy text-xs font-semibold px-2.5 py-0.5 rounded-full&quot;&gt;${skill}&lt;/span&gt;`).join(&#39;&#39;)}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`;<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const skillTemplate = (skill) =&gt; `<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;flex justify-between mb-1&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class=&quot;text-base font-medium text-gray-700&quot;&gt;${skill.skill}&lt;/span&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class=&quot;text-sm font-semibold text-gray-600&quot;&gt;${skill.level}%&lt;/span&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;skill-bar&quot;&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class=&quot;skill-level-fill&quot; data-level=&quot;${skill.level}&quot;&gt;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`;<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Mobile menu functionality<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const mobileMenu = document.getElementById(&#39;mobile-menu&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const mobileMenuButton = document.getElementById(&#39;mobile-menu-button&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const mobileMenuCloseButton = document.getElementById(&#39;mobile-menu-close&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const navLinks = document.querySelectorAll(&#39;.nav-button-mobile&#39;);<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;mobileMenuButton.addEventListener(&#39;click&#39;, () =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;mobileMenu.classList.add(&#39;open&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;document.body.classList.add(&#39;modal-open&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;mobileMenuCloseButton.addEventListener(&#39;click&#39;, () =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;mobileMenu.classList.remove(&#39;open&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;document.body.classList.remove(&#39;modal-open&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;navLinks.forEach(link =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;link.addEventListener(&#39;click&#39;, () =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;mobileMenu.classList.remove(&#39;open&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;document.body.classList.remove(&#39;modal-open&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Skill bar animation on scroll using Intersection Observer<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const skillsSection = document.getElementById(&#39;skills&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const observer = new IntersectionObserver((entries) =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;entries.forEach(entry =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (entry.isIntersecting) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const fills = document.querySelectorAll(&#39;.skill-level-fill&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fills.forEach(fill =&gt; {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const level = fill.getAttribute(&#39;data-level&#39;);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fill.style.width = `${level}%`;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Unobserve after animation is done to prevent re-triggering<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;observer.unobserve(skillsSection);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}, {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;threshold: 0.5 // Trigger when 50% of the section is visible<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;});<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (skillsSection) {<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;observer.observe(skillsSection);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Initial rendering of all sections<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;renderSection(workData, &#39;work-experience-list&#39;, workTemplate);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;renderSection(educationData, &#39;education-list&#39;, educationTemplate);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;renderSection(certificationsData, &#39;certifications-list&#39;, certificationsTemplate);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;renderSection(skillsData.technical, &#39;technical-skills-list&#39;, skillTemplate);<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;renderSection(skillsData.soft, &#39;soft-skills-list&#39;, skillTemplate);<br> &nbsp; &nbsp; &nbsp; &nbsp;});<br> &nbsp; &nbsp;&lt;/script&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br></span></p></body></html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliza Khalid Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom Tailwind Configuration for the theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-navy': '#1D2A4B',
+                        'secondary-white': '#F4F7FB',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 4.5rem;
+            background: linear-gradient(to bottom right, #D6E0F0, #A0B2D4);
+        }
+        /* New class to prevent background scrolling when modal is open */
+        body.modal-open {
+            overflow: hidden;
+        }
+        .modal-backdrop {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .modal-content {
+            transition: transform 0.3s ease-in-out;
+        }
+        .skill-bar {
+            background-color: #e5e7eb;
+            height: 10px;
+            border-radius: 9999px;
+        }
+        /* Initial state of the skill bar fill */
+        .skill-level-fill {
+            height: 100%;
+            background-color: #1f2937;
+            border-radius: 9999px;
+            width: 0; /* Start with zero width */
+            transition: width 1s ease-out; /* Add a smooth transition */
+        }
+        /* Keyframe animation for the navigation button click effect */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.95); }
+            100% { transform: scale(1); }
+        }
+        .nav-button-clicked {
+            animation: pulse 0.3s ease-in-out;
+        }
+        .nav-button {
+            transition: all 0.2s ease-in-out;
+            transform-origin: center;
+        }
+        /* Style for the SVG avatar to ensure it's centered and colored correctly */
+        .avatar-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        /* Mobile menu styling */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+        #mobile-menu.open {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Fixed Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300 ease-in-out">
+        <div class="max-w-5xl mx-auto flex justify-between items-center px-4 py-3 md:py-4">
+            <!-- Logo with increased font size and letter-spacing -->
+            <a href="#" class="text-2xl md:text-3xl font-extrabold text-primary-navy tracking-wider">A.K.</a>
+            
+            <!-- Desktop Navigation Links (hidden on mobile) -->
+            <ul class="hidden md:flex space-x-2 text-sm font-medium">
+                <li><a href="#about" class="nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90">About</a></li>
+                <li><a href="#work-experience" class="nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90">Experience</a></li>
+                <li><a href="#education" class="nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90">Education</a></li>
+                <li><a href="#certifications" class="nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90">Certifications</a></li>
+                <li><a href="#skills" class="nav-button bg-primary-navy text-secondary-white px-3 py-1.5 rounded-full font-bold hover:bg-primary-navy/80 active:bg-primary-navy/90">Skills</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button (hamburger) visible on small screens -->
+            <button id="mobile-menu-button" class="md:hidden p-2 text-primary-navy rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-navy transition-colors duration-200">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Panel (Hidden by default) -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white md:hidden">
+        <div class="flex justify-between items-center px-4 py-3 border-b">
+            <a href="#" class="text-2xl font-extrabold text-primary-navy tracking-wider">A.K.</a>
+            <button id="mobile-menu-close" class="p-2 text-gray-500 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <ul class="flex flex-col items-center gap-6 p-8 text-xl font-medium">
+            <li><a href="#about" class="nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors">About</a></li>
+            <li><a href="#work-experience" class="nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors">Experience</a></li>
+            <li><a href="#education" class="nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors">Education</a></li>
+            <li><a href="#certifications" class="nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors">Certifications</a></li>
+            <li><a href="#skills" class="nav-button-mobile text-primary-navy hover:text-blue-500 transition-colors">Skills</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative bg-white pt-20 pb-40 md:pt-32 md:pb-52 flex items-center justify-center min-h-[60vh]">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <!-- New SVG avatar representing a magnifying glass over a stylized leaf -->
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mx-auto mb-6 bg-primary-navy/10 flex items-center justify-center p-4">
+                <svg class="avatar-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Magnifying glass handle -->
+                    <path d="M 65 65 L 85 85" stroke="#1f2937" stroke-width="5" stroke-linecap="round" />
+                    <!-- Magnifying glass lens -->
+                    <circle cx="45" cy="45" r="30" fill="none" stroke="#1f2937" stroke-width="5" />
+                    <!-- Leaf shape inside -->
+                    <path d="M 45 30 C 55 25 65 35 60 45 C 55 55 40 50 45 30 Z" fill="#1f2937" />
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Aliza Khalid</h1>
+            <p class="text-base md:text-lg text-gray-600 mb-6">Food Scientist | Quality Control Specialist</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-600">
+                <a href="mailto:alizakhalid024@gmail.com" class="hover:text-primary-navy transition-colors">
+                    <span class="font-semibold mr-1">📧</span> alizakhalid024@gmail.com
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Reduced vertical spacing between sections -->
+    <main class="relative -mt-24 md:-mt-32 max-w-5xl mx-auto px-4 space-y-12 md:space-y-16 pb-20">
+
+        <section id="about" class="bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+                A recent graduate in Food Science and Technology, I possess a strong academic foundation and hands-on experience from a valuable internship in quality control. My goal is to apply my knowledge in Good Laboratory Practices and Quality Assurance to an entry-level position where I can contribute to a team's success and further develop my professional skills. I am a dedicated and fast learner, eager to take on new challenges and grow within a professional environment.
+            </p>
+        </section>
+
+        <section id="work-experience" class="bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
+            <div id="work-experience-list" class="space-y-8 md:space-y-12">
+                <!-- Content injected by JavaScript -->
+            </div>
+        </section>
+
+        <section id="education" class="bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-8">Education</h2>
+            <div id="education-list" class="space-y-8 md:space-y-12">
+                <!-- Content injected by JavaScript -->
+            </div>
+        </section>
+
+        <section id="certifications" class="bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-8">Certifications</h2>
+            <div id="certifications-list" class="space-y-6">
+                <!-- Content injected by JavaScript -->
+            </div>
+        </section>
+
+        <section id="skills" class="bg-white p-8 md:p-12 rounded-xl shadow-md scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-8">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+                    <div id="technical-skills-list" class="space-y-4">
+                        <!-- Technical skills injected by JavaScript -->
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Soft Skills</h3>
+                    <div id="soft-skills-list" class="space-y-4">
+                        <!-- Soft skills injected by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- No project modal is needed for this resume -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Data for the resume sections
+            const skillsData = {
+                technical: [
+                    { skill: 'Quality Control', level: 90 },
+                    { skill: 'Good Laboratory Practice', level: 85 },
+                    { skill: 'Research and Development', level: 80 },
+                    { skill: 'Quality Assurance', level: 90 },
+                    { skill: 'Food Science & Technology', level: 95 }
+                ],
+                soft: [
+                    { skill: 'Problem Solving', level: 90 },
+                    { skill: 'Team Collaboration', level: 85 },
+                    { skill: 'Communication', level: 80 },
+                    { skill: 'Fast Learner', level: 95 }
+                ]
+            };
+
+            const workData = [
+                {
+                    title: 'Pakistan Standard And Quality Control Authority',
+                    subtitle: 'Intern',
+                    date: 'August 2023 – October 2023',
+                    details: [
+                        'Assisted in the implementation of quality control procedures for various products, ensuring adherence to national standards.',
+                        'Applied principles of Good Laboratory Practice (GLP) to ensure the accuracy and reliability of all test results.',
+                        'Participated in research and development activities to explore new methods for product quality enhancement.',
+                        'Helped in the preparation of reports and documentation for quality assurance audits.'
+                    ]
+                }
+            ];
+
+            const educationData = [
+                {
+                    title: 'Hamdard University',
+                    subtitle: 'BS In Food Science And Technology',
+                    date: 'Nov 2020 – June 2024',
+                    details: ['Completed a comprehensive four-year program focusing on the scientific principles of food processing, preservation, quality assurance, and nutrition. Gained in-depth knowledge of food microbiology, chemistry, and safety regulations.']
+                },
+                {
+                    title: 'Government Degree College Sector 11-B',
+                    subtitle: 'Intermediate in Pre-Engineering',
+                    date: '2020',
+                    details: ['Completed a curriculum focused on mathematics, physics, and chemistry, providing a strong analytical foundation for technical and scientific fields.']
+                },
+                 {
+                    title: 'Falcon House Grammar School',
+                    date: '2017',
+                    subtitle: 'Matriculation',
+                    details: ['Completed foundational studies, developing strong academic skills in core subjects including science and mathematics.']
+                }
+            ];
+
+            const certificationsData = [
+                {
+                    name: 'Certificate of Internship from PSQCA',
+                    issuer: 'Pakistan Standard And Quality Control Authority',
+                    description: "This certificate formally acknowledges the completion of my internship, confirming my hands-on experience in quality control and assurance at a leading national authority.",
+                    skills: ['Quality Control', 'Quality Assurance', 'Laboratory Practice'],
+                    imageUrl: 'https://placehold.co/150x110/d1d5db/4b5563?text=PSQCA'
+                },
+                {
+                    name: 'Online Nutrition Internship Program',
+                    issuer: 'Online Provider',
+                    description: "Completed an online program to deepen my understanding of nutritional science, dietary planning, and food's impact on health. This expanded my knowledge beyond manufacturing and into the consumer-facing aspects of food science.",
+                    skills: ['Nutrition', 'Dietary Planning', 'Food Science'],
+                    imageUrl: 'https://placehold.co/150x110/d1d5db/4b5563?text=Nutrition'
+                }
+            ];
+
+            // Helper function to render a list of items
+            const renderSection = (data, containerId, templateFn) => {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    container.innerHTML = data.map(templateFn).join('');
+                }
+            };
+
+            // Templates for each section
+            const workTemplate = (job) => `
+                <div class="relative pl-6 md:pl-8 border-l-2 border-gray-200">
+                    <span class="absolute -left-2 top-0 block h-4 w-4 rounded-full bg-primary-navy ring-8 ring-white"></span>
+                    <div class="flex justify-between items-start flex-wrap">
+                        <h3 class="text-xl md:text-2xl font-bold">${job.title}</h3>
+                        <span class="text-gray-500 text-sm md:text-base font-medium">${job.date}</span>
+                    </div>
+                    <p class="text-primary-navy font-semibold mb-2">${job.subtitle}</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        ${job.details.map(detail => `<li>${detail}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+
+            const educationTemplate = (edu) => `
+                <div class="relative pl-6 md:pl-8 border-l-2 border-gray-200">
+                    <span class="absolute -left-2 top-0 block h-4 w-4 rounded-full bg-primary-navy ring-8 ring-white"></span>
+                    <div class="flex justify-between items-start flex-wrap">
+                        <h3 class="text-xl md:text-2xl font-bold">${edu.title}</h3>
+                        <span class="text-gray-500 text-sm md:text-base font-medium">${edu.date}</span>
+                    </div>
+                    <p class="text-primary-navy font-semibold mb-2">${edu.subtitle}</p>
+                    <p class="text-gray-700">${edu.details[0]}</p>
+                </div>
+            `;
+
+            const certificationsTemplate = (cert) => `
+                <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 bg-secondary-white p-6 rounded-xl border border-gray-200">
+                    <img src="${cert.imageUrl}" alt="${cert.name} certificate" class="w-24 h-24 flex-shrink-0 object-cover rounded-md">
+                    <div>
+                        <h3 class="text-lg font-bold">${cert.name}</h3>
+                        <p class="text-gray-600 font-medium">${cert.issuer}</p>
+                        <p class="text-gray-700 text-sm mt-2">${cert.description}</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            ${cert.skills.map(skill => `<span class="bg-primary-navy/10 text-primary-navy text-xs font-semibold px-2.5 py-0.5 rounded-full">${skill}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const skillTemplate = (skill) => `
+                <div>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-gray-700">${skill.skill}</span>
+                        <span class="text-sm font-semibold text-gray-600">${skill.level}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level-fill" data-level="${skill.level}"></div>
+                    </div>
+                </div>
+            `;
+
+            // Mobile menu functionality
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenuCloseButton = document.getElementById('mobile-menu-close');
+            const navLinks = document.querySelectorAll('.nav-button-mobile');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.add('open');
+                document.body.classList.add('modal-open');
+            });
+
+            mobileMenuCloseButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                document.body.classList.remove('modal-open');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                    document.body.classList.remove('modal-open');
+                });
+            });
+
+            // Skill bar animation on scroll using Intersection Observer
+            const skillsSection = document.getElementById('skills');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const fills = document.querySelectorAll('.skill-level-fill');
